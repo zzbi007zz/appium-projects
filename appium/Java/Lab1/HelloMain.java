@@ -1,4 +1,4 @@
-package Lab1;
+package Java.Lab1;
 
 public class HelloMain {
     public static void main(String[] args) {

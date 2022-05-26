@@ -1,4 +1,4 @@
-package Lab2;
+package Java.Lab2;
 
 public class OperatorLearning {
     public static void main(String[] args) {

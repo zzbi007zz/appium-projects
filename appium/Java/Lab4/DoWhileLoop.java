@@ -5,10 +5,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class DoWhileLoop {
+    static List<Integer> myArrList = new ArrayList<>();
     public static void main(String[] args) {
 
         boolean isContinuing = true;
-        int[] myArrList = {12,90,24,89,23,7,1,10};
+
+        generateArrayList();
 
         while(isContinuing) {
             menuOption();
@@ -16,21 +18,16 @@ public class DoWhileLoop {
 
            switch (userOpt) {
                case 1:
-                   System.out.println("1");
-                   addNumbtoArray();
-                   isContinuing=false;
+                   addItemtoArray();
                    break;
                case 2:
-                   System.out.println("2");
-                   isContinuing=false;
+                   getArrayList();
                    break;
                case 3:
-                   System.out.println("3");
-                   isContinuing=false;
+                   getMinAndMaxNumber();
                    break;
                case 4:
                    System.out.println("4");
-                   isContinuing=false;
                    break;
            }
 
@@ -39,10 +36,45 @@ public class DoWhileLoop {
 
 
     }
+    public static void getMinAndMaxNumber() {
+        int maxNumber= myArrList.get(0);
+        int minNumber = myArrList.get(0);
+        for (int i = 1; i < myArrList.size() ; i++) {
+            if (myArrList.get(i) > maxNumber) {
+                maxNumber = myArrList.get(i);
+            } else if (myArrList.get(i) < minNumber) {
+                minNumber = myArrList.get(i);
+            }
+        }
+        System.out.println("Minimum: " + minNumber);
+        System.out.println("Maximum: " + maxNumber);
+
+    }
+    public static List<Integer> addItemtoArray(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input an number to add to arraylist");
+        int usrInput = scanner.nextInt();
+        myArrList.add(usrInput);
+        return myArrList;
+    }
+
+    public static List<Integer> generateArrayList() {
+        for (int i = 0; i < 10; i++) {
+            myArrList.add(i);
+        }
+        return myArrList;
+    }
+
+    public static List<Integer> getArrayList(){
+        for (int idx = 0; idx < myArrList.size() ; idx++) {
+            System.out.println(myArrList.get(idx));
+        }
+        return myArrList;
+    }
 
     private static int getUserOption() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Select an option: ");
+        System.out.println("Input an option ");
         int userOption = sc.nextInt();
         return userOption;
     }

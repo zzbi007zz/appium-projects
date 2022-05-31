@@ -27,7 +27,7 @@ public class DoWhileLoop {
                    getMinAndMaxNumber();
                    break;
                case 4:
-                   System.out.println("4");
+                   getMinAndMaxNumber();
                    break;
            }
 

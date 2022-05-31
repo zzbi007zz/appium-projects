@@ -1,4 +1,4 @@
-package Java.Lab3;
+package Java.lab3;
 
 public class Ex3_2 {
 

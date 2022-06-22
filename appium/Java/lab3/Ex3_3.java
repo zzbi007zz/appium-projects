@@ -2,7 +2,7 @@ package Java.lab3;
 
 public class Ex3_3 {
     public static void main(String[] args) {
-        int sortArr[] = {12, 34, 1, 16, 28};
+        int[] sortArr = {12, 34, 1, 16, 28};
         int arrSize = sortArr.length;
         for (int step = 1; step < arrSize ; step++) {
             int keyValue = sortArr[step];

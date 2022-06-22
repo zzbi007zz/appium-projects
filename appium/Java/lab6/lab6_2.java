@@ -8,12 +8,15 @@ public class lab6_2 {
         String myPassword = "password123";
         Scanner usrInput = new Scanner(System.in);
         String usrPwd;
-        do {
-            System.out.println("Please inut password");
+        int count = 0;
+        while (count<3) {
+            System.out.println("Please input password");
             usrPwd = usrInput.nextLine();
-        } while (!usrPwd.equals(myPassword));
-
-        System.out.println("Correct!");
-
+            if (usrPwd.equals(myPassword)) {
+                System.out.println("Correct");
+            } else {
+                count++;
+            }
+        }
     }
 }

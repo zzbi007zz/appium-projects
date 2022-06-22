@@ -12,7 +12,7 @@ public class lab6_4 {
             System.out.println("This url contain https");
         }
 
-        String urlSub = url.substring(8,url.length());
+        String urlSub = url.substring(8);
 
         if (urlSub.equals("google.com")) {
             System.out.println("Google domain found");

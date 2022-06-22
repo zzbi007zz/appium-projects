@@ -28,7 +28,6 @@ public class BMICalculate {
         else {
             System.out.println("Obesity");
             System.out.println(".................-----> Diet or Die................");
-          ;
         }
     }
 }

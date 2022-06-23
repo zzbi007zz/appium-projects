@@ -9,6 +9,7 @@ import java.util.List;
 import static java.util.Arrays.*;
 
 public class AnimalController {
+
     public static void validateAnimal(List<Animal> animalList) {
         List<Animal> animalFiltered = new ArrayList<>();
         List<Animal> candidateList = new ArrayList<>();

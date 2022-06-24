@@ -6,5 +6,4 @@ public class Tiger extends Animal{
         super(TIGER_MAX_SPEED);
     }
 
-
 }
